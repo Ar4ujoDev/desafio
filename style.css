@@ -1,12 +1,10 @@
-
-
 /* Header */
 
 
 
 header {
-    background: rgb(34, 193, 195);
-    background: linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(1, 30, 75, 1) 100%);
+    background-image: rgb(34, 193, 195);
+    background: white;
     margin: 0%;
     height: 330px;
     padding: 20px;
@@ -14,8 +12,14 @@ header {
 }
 
 .principal {
-    border: 15px outset rgba(34, 193, 195, 1);
-    color: white;
+    border: 50px solid black;
+    padding: 10px;
+    border-image-source: url(Imagens/borda.png);
+    border-image-slice: 157;
+    border-image-repeat: repeat;
+    box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.493);
+    text-align: center;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,41 +40,45 @@ header {
     display: flex;
     position: relative;
     justify-content: center;
-    margin:  70px 0px 0px 0px;
+    margin: 70px 0px 0px 0px;
     font-size: 2rem;
     color: white;
-   
+
 }
 
 
 .navbar {
 
-    padding-top: 50px;
+    padding-top: -5px;
     text-align: center;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    
+
+
 }
 
 
 /* header>nav>a */
 .menu {
-   position: relative;
-   display: inline-block;
+    position: relative;
+    display: inline-block;
     font-size: larger;
-    text-decoration: overline ;
-    color: white;
+    text-decoration: overline;
+    color: rgb(0, 0, 0);
     margin: 0px 60px;
     border-radius: 20px;
     padding: 10px;
+
+
+
 }
 
 .menu:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     text-decoration: underline;
-    color: black;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -83,21 +91,27 @@ body {
 /* Fim Reader */
 
 .quem {
-    background: linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(1, 30, 75, 1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 41%, rgba(43, 43, 43, 1) 100%);
     padding: 1px 0px 0px 0px;
-    margin: 0px 200px;
-    
+    width: 100%;
+
+
 }
 
 .quemtitu {
-    border: 15px outset rgba(34, 193, 195, 1);
-    color: white;
+    border: 50px outset rgba(34, 193, 195, 1);
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     padding: 20px;
     margin: 20px 100px;
+    border-image-source: url(Imagens/borda.png);
+    border-image-slice: 157;
+    border-image-repeat: repeat;
+    box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.493);
 
 }
 
@@ -106,9 +120,9 @@ body {
 
 }
 
-.caralho{
+.caralho {
 
-display: flex;
+    display: flex;
 }
 
 .perfil {
@@ -116,17 +130,20 @@ display: flex;
     width: 100%;
     height: 65%;
     display: flex;
-    flex-direction: column; /* Alinha verticalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    
+    flex-direction: column;
+    /* Alinha verticalmente */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
+
 }
 
 
 .foto {
     width: 15rem;
     height: 15rem;
-    border-radius: 9999px ;
+    border-radius: 9999px;
     border-style: groove;
     object-fit: cover;
 }
@@ -136,9 +153,131 @@ display: flex;
     animation-duration: 200ms;
     ;
 }
+
 .quemtext {
     text-align: justify;
     padding: 100px;
     font-size: 2rem;
 }
 
+/* fim quem sou eu */
+
+.patro {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 41%, rgba(43, 43, 43, 1) 100%);
+    padding: 1px 0px 0px 0px;
+    width: 100%;
+}
+
+.patrotitu {
+    border: 50px outset rgba(34, 193, 195, 1);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px 100px;
+    border-image-source: url(Imagens/borda.png);
+    border-image-slice: 157;
+    border-image-repeat: repeat;
+    box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.493);
+}
+
+.patrotitu:hover {
+    scale: 1.1;
+}
+
+/* cards dos patrocinadores */
+
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 8rem;
+    padding-top: 3rem;
+    background-color: #ededf2;
+    background-image: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+
+
+}
+
+.card {
+    width: 20rem;
+    height: 30rem;
+    margin: 1rem;
+    border: 1px transparent;
+    border-radius: 30px;
+    -webkit-box-shadow: 3px 0px 50px -3px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 3px 0px 50px -3px rgba(0, 0, 0, 0.41);
+    box-shadow: 3px 0px 50px -3px #0000008f;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    border: inherit;
+    border-radius: inherit;
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: inherit;
+    border-radius: inherit;
+
+
+}
+
+
+
+
+.background {
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+    bottom: 30rem;
+    border: inherit;
+    border-radius: inherit;
+
+    opacity: 0;
+
+}
+
+
+.card-info {
+    display: flex;
+    height: 15rem;
+    width: 15rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: inherit;
+
+    backdrop-filter: blur(19px) saturate(124%);
+    -webkit-backdrop-filter: blur(19px) saturate(124%);
+    background-color: rgba(255, 255, 255, 0.47);
+    padding: 1rem;
+
+    -webkit-box-shadow: 3px 0px 37px 6px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 3px 0px 37px 6px rgba(0, 0, 0, 0.55);
+    box-shadow: 3px 0px 37px 6px #F54C75;
+
+    position: absolute;
+    bottom: 6rem;
+    left: 1.6rem;
+
+    font-family: var(--font-tertiary);
+    color: rgb(46, 46, 46);
+    opacity: 1;
+}
+
+
+.card-info p,
+.card-info h3,
+.card-info h2 {
+    margin-bottom: .2rem;
+}
